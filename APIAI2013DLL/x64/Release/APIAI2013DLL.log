@@ -1,0 +1,52 @@
+﻿빌드 시작: 2017-04-13 오후 5:21:55
+     1>2 노드의 "C:\Users\jkj\Desktop\APIAI2013DLL\APIAI2013DLL\APIAI2013DLL.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\jkj\Desktop\APIAI2013DLL\/include /IC:\Users\jkj\Desktop\APIAI2013DLL\/APIAI2013DLL /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D APIAI2013DLL_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt APIAI2013DLL.cpp
+         APIAI2013DLL.cpp
+     1>APIAI2013DLL.cpp(52): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jkj\Desktop\APIAI2013DLL\x64\Release\APIAI2013DLL.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\jkj\Desktop\APIAI2013DLL\/lib libcurl.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jkj\Desktop\APIAI2013DLL\x64\Release\APIAI2013DLL.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jkj\Desktop\APIAI2013DLL\x64\Release\APIAI2013DLL.lib" /MACHINE:X64 /DLL x64\Release\APIAI2013DLL.obj
+         x64\Release\AI.obj
+         x64\Release\Credentials.obj
+         x64\Release\Exception.obj
+         x64\Release\InvalidArgumentException.obj
+         x64\Release\JSONException.obj
+         x64\Release\ResponseErrorException.obj
+         x64\Release\RequestConnection.obj
+         x64\Release\RequestConnectionImpl.obj
+         x64\Release\Stream.obj
+         x64\Release\StreamReader.obj
+         x64\Release\StreamWriter.obj
+         x64\Release\cJSONUtils.obj
+         x64\Release\ContextParametersSerializer.obj
+         x64\Release\QueryRequest.obj
+         x64\Release\Entity.obj
+         x64\Release\Parameters.obj
+         x64\Release\QueryText.obj
+         x64\Release\QueryTextSerialize.obj
+         x64\Release\RequestContext.obj
+         x64\Release\Context.obj
+         x64\Release\Element.obj
+         x64\Release\Fulfillment.obj
+         x64\Release\Metadata.obj
+         x64\Release\Response.obj
+         x64\Release\Result.obj
+         x64\Release\TextQueryRequest.obj
+         x64\Release\VoiceRequest.obj
+         x64\Release\Service.obj
+         x64\Release\Types.obj
+         x64\Release\VADContext.obj
+         x64\Release\VoiceActivityDetector.obj
+         x64\Release\cJSON.obj
+         x64\Release\dllmain.obj
+         x64\Release\indent_stream.obj
+         x64\Release\stdafx.obj
+            C:\Users\jkj\Desktop\APIAI2013DLL\x64\Release\APIAI2013DLL.lib 라이브러리 및 C:\Users\jkj\Desktop\APIAI2013DLL\x64\Release\APIAI2013DLL.exp 개체를 생성하고 있습니다.
+         코드를 생성하고 있습니다.
+         코드를 생성했습니다.
+         APIAI2013DLL.vcxproj -> C:\Users\jkj\Desktop\APIAI2013DLL\x64\Release\APIAI2013DLL.dll
+     1>"C:\Users\jkj\Desktop\APIAI2013DLL\APIAI2013DLL\APIAI2013DLL.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:08.70

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{019349AF-5FDB-4F85-A8CA-F8769EBA5FC8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>APIAI2013DLL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;APIAI2013DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;APIAI2013DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;APIAI2013DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;APIAI2013DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/include;$(SolutionDir)/APIAI2013DLL</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apiai\AI.h" />
+    <ClInclude Include="apiai\common\Deprecated.h" />
+    <ClInclude Include="apiai\Credentials.h" />
+    <ClInclude Include="apiai\exceptions\Exception.h" />
+    <ClInclude Include="apiai\exceptions\InvalidArgumentException.h" />
+    <ClInclude Include="apiai\exceptions\JSONException.h" />
+    <ClInclude Include="apiai\exceptions\ResponseErrorException.h" />
+    <ClInclude Include="apiai\http\Request.h" />
+    <ClInclude Include="apiai\http\RequestConnection.h" />
+    <ClInclude Include="apiai\http\RequestConnectionImpl.h" />
+    <ClInclude Include="apiai\http\RequestSerialize.h" />
+    <ClInclude Include="apiai\io\Stream.h" />
+    <ClInclude Include="apiai\io\StreamReader.h" />
+    <ClInclude Include="apiai\io\StreamWriter.h" />
+    <ClInclude Include="apiai\query\cJSONUtils.h" />
+    <ClInclude Include="apiai\query\ContextParametersSerializer.h" />
+    <ClInclude Include="apiai\query\QueryRequest.h" />
+    <ClInclude Include="apiai\query\request\Entity.h" />
+    <ClInclude Include="apiai\query\request\Parameters.h" />
+    <ClInclude Include="apiai\query\request\QueryText.h" />
+    <ClInclude Include="apiai\query\request\QueryTextSerialize.h" />
+    <ClInclude Include="apiai\query\request\QueryTextVisitor.h" />
+    <ClInclude Include="apiai\query\request\RequestContext.h" />
+    <ClInclude Include="apiai\query\response\Context.h" />
+    <ClInclude Include="apiai\query\response\Element.h" />
+    <ClInclude Include="apiai\query\response\Fulfillment.h" />
+    <ClInclude Include="apiai\query\response\Metadata.h" />
+    <ClInclude Include="apiai\query\response\Response.h" />
+    <ClInclude Include="apiai\query\response\Result.h" />
+    <ClInclude Include="apiai\query\TextQueryRequest.h" />
+    <ClInclude Include="apiai\query\VoiceRequest.h" />
+    <ClInclude Include="apiai\Service.h" />
+    <ClInclude Include="apiai\Types.h" />
+    <ClInclude Include="apiai\vad\VADContext.h" />
+    <ClInclude Include="apiai\vad\VADState.h" />
+    <ClInclude Include="apiai\vad\VoiceActivityDetector.h" />
+    <ClInclude Include="cJSON\cJSON.h" />
+    <ClInclude Include="indent_stream\indent_stream.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="APIAI2013DLL.cpp" />
+    <ClCompile Include="apiai\AI.cpp" />
+    <ClCompile Include="apiai\Credentials.cpp" />
+    <ClCompile Include="apiai\exceptions\Exception.cpp" />
+    <ClCompile Include="apiai\exceptions\InvalidArgumentException.cpp" />
+    <ClCompile Include="apiai\exceptions\JSONException.cpp" />
+    <ClCompile Include="apiai\exceptions\ResponseErrorException.cpp" />
+    <ClCompile Include="apiai\http\RequestConnection.cpp" />
+    <ClCompile Include="apiai\http\RequestConnectionImpl.cpp" />
+    <ClCompile Include="apiai\io\Stream.cpp" />
+    <ClCompile Include="apiai\io\StreamReader.cpp" />
+    <ClCompile Include="apiai\io\StreamWriter.cpp" />
+    <ClCompile Include="apiai\query\cJSONUtils.cpp" />
+    <ClCompile Include="apiai\query\ContextParametersSerializer.cpp" />
+    <ClCompile Include="apiai\query\QueryRequest.cpp" />
+    <ClCompile Include="apiai\query\request\Entity.cpp" />
+    <ClCompile Include="apiai\query\request\Parameters.cpp" />
+    <ClCompile Include="apiai\query\request\QueryText.cpp" />
+    <ClCompile Include="apiai\query\request\QueryTextSerialize.cpp" />
+    <ClCompile Include="apiai\query\request\RequestContext.cpp" />
+    <ClCompile Include="apiai\query\response\Context.cpp" />
+    <ClCompile Include="apiai\query\response\Element.cpp" />
+    <ClCompile Include="apiai\query\response\Fulfillment.cpp" />
+    <ClCompile Include="apiai\query\response\Metadata.cpp" />
+    <ClCompile Include="apiai\query\response\Response.cpp" />
+    <ClCompile Include="apiai\query\response\Result.cpp" />
+    <ClCompile Include="apiai\query\TextQueryRequest.cpp" />
+    <ClCompile Include="apiai\query\VoiceRequest.cpp" />
+    <ClCompile Include="apiai\Service.cpp" />
+    <ClCompile Include="apiai\Types.cpp" />
+    <ClCompile Include="apiai\vad\VADContext.c" />
+    <ClCompile Include="apiai\vad\VoiceActivityDetector.cpp" />
+    <ClCompile Include="cJSON\cJSON.c" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="indent_stream\indent_stream.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
